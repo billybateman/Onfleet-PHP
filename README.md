@@ -5,15 +5,12 @@
 
 <p>Include Onfleet.php into your .php file.</p>
 
-<div class="highlight highlight-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>onfleet<span class="pl-pds">'</span></span></pre></div>
-
-<h2><a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>Include Onfleet-PHP API wrapper:</p>
 <pre><code>
 include "Onfleet.php";
 </code>
 </pre>
+
+<h2><a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>You can create an instance of the API wrapper:</p>
 <pre><code>
