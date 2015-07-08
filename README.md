@@ -5,31 +5,21 @@
 
 <p>Include Onfleet.php into your .php file.</p>
 
-<pre><code>
-include "Onfleet.php";
-</code>
-</pre>
+<pre><code>include "Onfleet.php";</code></pre>
 
 <h2><a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>You can create an instance of the API wrapper:</p>
-<pre><code>
-$config = array("api_name" => "Replace with Name", "api_key" => "Replace with key");
-$onfleet = new Onfleet($config);
-</code>
-</pre>
+<pre><code>$config = array("api_name" => "Replace with Name", "api_key" => "Replace with key");
+$onfleet = new Onfleet($config);</code></pre>
 
 <p>Example to Create Administrator:</p>
-<pre><code>
-$params = array("name" => "Stuart Little", "email" => "your@email.com", "phone" => "6615991234");
-$response = $onfleet->admin_create($params);
-</code></pre>
+<pre><code>$params = array("name" => "Stuart Little", "email" => "your@email.com", "phone" => "6615991234");
+$response = $onfleet->admin_create($params);</code></pre>
 
 <p>Example to List Tasks:</p>
-<pre><code>
-$params = array("state" => 0);
-$response = $onfleet->tasks($params);
-</code></pre>
+<pre><code>$params = array("state" => 0);
+$response = $onfleet->tasks($params);</code></pre>
 
 <h2><a id="user-content-contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
