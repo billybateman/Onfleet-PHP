@@ -209,61 +209,8 @@ class Onfleet {
         $id = $params['id'];
 		
 		return $this->request('get', self::http_api_url.'teams/'.$id, $this->_api_key);
-    }
+    }	
 	
-	/**
-     * Create team
-     *
-	 * $params array
-	 *
-     * @return object
-    
-    public function team_create($params = array())
-    {
-        return $this->request('post', self::http_api_url.'teams', $this->_api_key, $params);
-    }
-	*/
-	
-	/**
-     * Update team
-     *
-	 * $params array
-	 *
-     * @return object
-    
-    public function team_update($params = array())
-    {
-        $id = $params['id'];
-		
-		return $this->request('put', self::http_api_url.'teams/'.$id, $this->_api_key, $params);
-    }
-	*/
-
-	/**
-     * Delete team
-     *
-	 * $params array
-	 *
-     * @return object
-    
-    public function team_delete($params = array())
-    {
-        $id = $params['id'];
-		
-		return $this->request('delete', self::http_api_url.'teams/'.$id, $this->_api_key);
-    }
-	*/
-	
-	/**
-     * List destinations
-     *
-     * @return object
-    
-    public function destinations()
-    {
-        return $this->request('get', self::http_api_url.'destinations', $this->_api_key);
-    }
-	*/
 	
 	/**
      * Destination Details
@@ -289,48 +236,7 @@ class Onfleet {
     public function destination_create($params = array())
     {
         return $this->request('post', self::http_api_url.'destinations', $this->_api_key, $params);
-    }
-	
-	/**
-     * Update destination
-     *
-	 * $params array
-	 *
-     * @return object
-    
-    public function destination_update($params = array())
-    {
-        $id = $params['id'];
-		
-		return $this->request('put', self::http_api_url.'destinations/'.$id, $this->_api_key, $params);
-    }
-	*/
-
-	/**
-     * Delete destination
-     *
-	 * $params array
-	 *
-     * @return object
-    
-    public function destination_delete($params = array())
-    {
-        $id = $params['id'];
-		
-		return $this->request('delete', self::http_api_url.'destinations/'.$id, $this->_api_key);
-	}
-	*/
-	
-	/**
-     * List recipients
-     *
-     * @return object
-    
-    public function recipients()
-    {
-        return $this->request('get', self::http_api_url.'recipients', $this->_api_key);
-    }
-	*/
+    }	
 	
 	/**
      * Recipient Search By Name
@@ -399,21 +305,6 @@ class Onfleet {
 		
 		return $this->request('put', self::http_api_url.'recipients/'.$id, $this->_api_key, $params);
     }
-
-	/**
-     * Delete recipient
-     *
-	 * $params array
-	 *
-     * @return object
-    
-    public function recipient_delete($params = array())
-    {
-        $id = $params['id'];
-		
-		return $this->request('delete', self::http_api_url.'recipients/'.$id, $this->_api_key);
-    }	
-	*/
 	
 	/**
      * List tasks
