@@ -413,6 +413,23 @@ class Onfleet {
     }
 
     /**
+     * Metadata search
+     * 
+     * $params array
+     * 
+     * @return mixed         
+    */
+    public function metadata_search($entity = null, $params = array())
+    {
+        $allowedEntities = array('administrators', 'workers', 'destinations', 'tasks', 'recipients');
+        if(!is_null($entity) && in_array($entity, $allowedEntities)) {
+            return $this->request('post', self::http_api_url.$entity.'/metadata', $this->_apiKey, $params);
+        } else {
+            return false;
+        }
+    }
+
+    /**
      * request data
      * Connect to API URL
      *
