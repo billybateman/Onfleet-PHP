@@ -186,6 +186,16 @@ class Onfleet {
 		
 		return $this->request('delete', self::http_api_url.'workers/'.$id, $this->_api_key);
     }
+
+    /**
+     * Create Team
+     *
+     * @return object
+     */
+    public function team_create($params = array())
+    {
+        return $this->request('post', self::http_api_url.'teams', $this->_apiKey, $params);
+    }
 	
 	/**
      * List teams
